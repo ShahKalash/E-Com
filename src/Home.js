@@ -1,13 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-
+import HeroSection from './components/HeroSection';
 const Home = () => {
-    return <Wrapper classname="test"> Home </Wrapper>
+    return <HeroSection props={{ name: "Flip-Zone" }} />
 }
 
-const Wrapper = styled.section`
-    height: 100vh;
-    background-color: ${({ theme }) => theme.colors.bg};
-`;
 
 export default Home;
