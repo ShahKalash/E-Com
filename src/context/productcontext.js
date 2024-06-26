@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useEffect } from "react";
 import { createContext } from "react";
 import axios from "axios";
@@ -36,6 +36,8 @@ const AppProvider = ({ children }) => {
     </AppContext.Provider>);
 };
 
+const useProductContext = () => {
+    return useContext(AppContext);
+};
 
-
-export { AppProvider, AppContext };
+export { AppProvider, AppContext, useProductContext };
