@@ -3,8 +3,10 @@ import styled from "styled-components";
 import FilterSection from "./components/FilterSection";
 import ProductList from "./components/ProductList";
 import Sort from "./components/Sort";
+import { useFilterContext } from "./context/filter_context";
 
 const Products = () => {
+  const { filter_products } = useFilterContext();
   return <Wrapper>
     <div className="container grid grid-filter-column">
       <div>
