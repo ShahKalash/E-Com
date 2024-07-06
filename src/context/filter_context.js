@@ -27,7 +27,10 @@ export const FilterContextProvider = ({ children }) => {
     const setGridView = () => {
         return dispatch({ type: "SET_GRIDVIEW" });
     }
-    return (<FilterContext.Provider value={{ ...state, setGridView }}>
+     const setListView = () => {
+        return dispatch({ type: "SET_LISTVIEW" });
+    }
+    return (<FilterContext.Provider value={{ ...state, setGridView, setListView }}>
         {children}
     </FilterContext.Provider>);
 };
