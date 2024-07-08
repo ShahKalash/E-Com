@@ -5,11 +5,11 @@ import { NavLink } from 'react-router-dom';
 import {Button} from '../styles/Button';
 
 
-const ListView = ({products}) => {
+const ListView = ({filter_products}) => {
   return (
     <Wrapper classname="section">
         <div className='container grid'>
-           { products.map((curEle)=>{
+           { filter_products.map((curEle)=>{
                 const {id, name,image, price, description} = curEle;
                 return (
                     <div key={id} className='card grid grid-two-column'>

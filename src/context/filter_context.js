@@ -21,7 +21,7 @@ export const FilterContextProvider = ({ children }) => {
     console.log(products);
 
     useEffect(()=>{
-        console.log("hi");
+        dispatch({type:"SORTING_PRODUCTS", payload: products});
     }, [state.sorting_value]);
 
     useEffect(() => {

@@ -8,11 +8,11 @@ const ProductList = () => {
 
     console.log(filter_products);
     if (grid_view) {
-        return <GridView products={filter_products} />;
+        return <GridView filter_products={filter_products} />;
     }
 
     else{
-        return <ListView products={filter_products}/>;
+        return <ListView filter_products={filter_products}/>;
     }
 };
 
