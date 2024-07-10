@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import {Button} from '../styles/Button';
 
 
-const ListView = ({filter_products}) => {
+const ListView = ({filter_products = []}) => {
   return (
     <Wrapper classname="section">
         <div className='container grid'>

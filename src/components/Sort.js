@@ -15,7 +15,7 @@ const Sort = () => {
                     <BsList className='icon'/>
                 </button>
             </div>
-            <div className='product-data'><p>{`${filter_products.length} Products Available`}</p></div>
+            <div className='product-data'><p> { filter_products ? `${filter_products.length} Products Available` : '0 products available'}</p></div>
             <div className='sort-selection'>
               <form action="#">
                 <label htmlFor='sort'></label>
