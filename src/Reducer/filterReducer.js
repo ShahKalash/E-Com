@@ -17,12 +17,12 @@ const filterReducer = (state, action) => {
                 grid_view: false,
             }
         case "GET_SORT_VALUE":
-            let userSortValue = document.getElementById("sort");
-            let sorting_value = userSortValue.options[userSortValue.selectedIndex].value;
+            // let userSortValue = document.getElementById("sort");
+            // let sorting_value = userSortValue.options[userSortValue.selectedIndex].value;
             return {
                 ...state,
-                sorting_value : sorting_value
-            }
+                sorting_value : action.payload
+            };
         case "SORTING_PRODUCTS":
         
             let newSortData;

@@ -36,8 +36,9 @@ export const FilterContextProvider = ({ children }) => {
         return dispatch({ type: "SET_LISTVIEW" });
     }
 
-    const sorting = ()=>{
-        dispatch({type:"GET_SORT_VALUE"});
+    const sorting = (event)=>{
+        let userValue= event.target.value;
+        dispatch({type:"GET_SORT_VALUE", payload:userValue});
     };
     
     return (<FilterContext.Provider value={{ ...state, setGridView, setListView, sorting }}>
