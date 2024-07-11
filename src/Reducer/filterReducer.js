@@ -34,7 +34,7 @@ const filterReducer = (state, action) => {
             if (state.sorting_value === "a-z")
             {
                 newSortData = sortedDataProduct.sort((a,b)=> {
-                    console.log(a.price, b.price);
+                    // console.log(a.price, b.price);
                     return a.name.localeCompare(b.name);
                 });
             }
@@ -43,7 +43,7 @@ const filterReducer = (state, action) => {
                 console.log("here");
                 console.log(sortedDataProduct);
                 newSortData = sortedDataProduct.sort((a, b) => {
-                    console.log(a.price, b.price);
+                    // console.log(a.price, b.price);
                     if (a.price < b.price) {
                         return -1; // `a` comes before `b`
                     } else if (a.price > b.price) {
@@ -92,6 +92,7 @@ const filterReducer = (state, action) => {
             let {all_products} = state;
             let tempFilterProduct = [...all_products];
 
+            console.log(tempFilterProduct);
             const {text} = state.filters;
 
             if (text) {

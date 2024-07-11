@@ -1,7 +1,6 @@
 import { createContext, useEffect, useReducer, useContext } from "react";
 import { useProductContext } from "./productcontext";
 import reducer from "../Reducer/filterReducer";
-import { type } from "@testing-library/user-event/dist/type";
 
 const FilterContext = createContext();
 
