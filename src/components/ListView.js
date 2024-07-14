@@ -20,7 +20,7 @@ const ListView = ({filter_products = []}) => {
                             <h3>{name}</h3>
                             <p><FormatPrice price={price}></FormatPrice></p>
                             <p>{description.slice(0,99)}...</p>
-                            <NavLink to={`/singleproducts/${id}`} className='btn-main'>
+                            <NavLink to={`/singleProduct/${id}`} className='btn-main'>
                                 <Button className='btn'> Read More</Button>
                             </NavLink>
                         </div>
